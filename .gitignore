@@ -1,0 +1,8 @@
+# 빌드 결과물 (build.bat 출력)
+MiniRenderer/build/
+
+# 컴파일러가 소스 폴더에 만든 결과물 (cl로 직접 빌드한 경우)
+*.exe
+*.obj
+*.ilk
+*.pdb
