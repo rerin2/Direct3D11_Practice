@@ -16,7 +16,7 @@ cd /d "%~dp0"
 if not exist build mkdir build
 
 rem 3) Compile and link
-cl /std:c++17 /utf-8 /W4 /EHsc /Zi /nologo /Fe:build\MiniRenderer.exe /Fo:build\ /Fd:build\ src\main.cpp user32.lib d3d11.lib
+cl /std:c++17 /utf-8 /W4 /EHsc /Zi /nologo /Fe:build\MiniRenderer.exe /Fo:build\ /Fd:build\ src\main.cpp user32.lib d3d11.lib d3dcompiler.lib
 if errorlevel 1 goto build_failed
 
 echo [OK] build\MiniRenderer.exe
